@@ -10,16 +10,16 @@ window.settings = { // general app settings
   selectedInput: 'mouse'
 }
 window.brushCursors = { // dictionary of cursors
-  oscilattingCircles: { img: "../images/cursors/oscilattingCircles.png", x: 17, y: 17 },
-  eraser:             { img: "../images/cursors/eraser.png",             x: 14, y: 32 },
-  shape:              { img: "../images/cursors/shape.png",              x: 9,  y: 10 },
-  clown:              { img: "../images/cursors/clown.png",              x: 17, y: 17 },
-  advancedEraser:     { img: "../images/cursors/eraser.png",             x: 14, y: 32 },
-  paintBucket:        { img: "../images/cursors/paintBucket.png",        x: 7,  y: 22 },
-  coffeeStain:        { img: "../images/cursors/coffeeStain.png",        x: 17, y: 17 },
-  fruit:              { img: "../images/cursors/fruit.png",              x: 17, y: 17 },
-  rotatingSquares:    { img: "../images/cursors/rotatingSquares.png",    x: 17, y: 17 },
-  colorStroke:        { img: "../images/cursors/colorStroke.png",        x: 5,  y: 30 }
+  oscilattingCircles: { img: "./images/cursors/oscilattingCircles.png", x: 17, y: 17 },
+  eraser:             { img: "./images/cursors/eraser.png",             x: 14, y: 32 },
+  shape:              { img: "./images/cursors/shape.png",              x: 9,  y: 10 },
+  clown:              { img: "./images/cursors/clown.png",              x: 17, y: 17 },
+  advancedEraser:     { img: "./images/cursors/eraser.png",             x: 14, y: 32 },
+  paintBucket:        { img: "./images/cursors/paintBucket.png",        x: 7,  y: 22 },
+  coffeeStain:        { img: "./images/cursors/coffeeStain.png",        x: 17, y: 17 },
+  fruit:              { img: "./images/cursors/fruit.png",              x: 17, y: 17 },
+  rotatingSquares:    { img: "./images/cursors/rotatingSquares.png",    x: 17, y: 17 },
+  colorStroke:        { img: "./images/cursors/colorStroke.png",        x: 5,  y: 30 }
 }
 
 window.setupMenuLogic = function () {
