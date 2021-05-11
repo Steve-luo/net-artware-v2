@@ -1,4 +1,4 @@
-/* global createCanvas, resizeCanvas */
+/* global createCanvas, resizeCanvas, cursor */
 function preload () {
   window.setupMenuLogic()
 }
@@ -10,9 +10,11 @@ function setup () {
 function draw () {
   const currentInput = window.settings.selectedInput
   const inputObj = window.inputs[currentInput]
+  const currentBrush = window.settings.selectedBrush
+  const currentCursor = window.brushCursors[currentBrush]
+  cursor(currentCursor.img, currentCursor.x, currentCursor.y)
   inputObj.update()
   if (inputObj.condition() && !window.dragging) {
-    const currentBrush = window.settings.selectedBrush
     const brushObj = window.brushes[currentBrush]
     brushObj.draw()
   }
