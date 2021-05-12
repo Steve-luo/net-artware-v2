@@ -12,7 +12,11 @@ function draw () {
   const inputObj = window.inputs[currentInput]
   const currentBrush = window.settings.selectedBrush
   const currentCursor = window.brushCursors[currentBrush]
-  cursor(currentCursor.img, currentCursor.x, currentCursor.y)
+  if (currentInput == 'mouse') { // disable cursor customization when input is not mouse
+    cursor(currentCursor.img, currentCursor.x, currentCursor.y)
+  } else {
+    cursor('auto')
+  }
   inputObj.update()
   if (inputObj.condition() && !window.dragging) {
     const brushObj = window.brushes[currentBrush]
